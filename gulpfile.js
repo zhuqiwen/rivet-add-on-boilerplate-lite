@@ -26,7 +26,6 @@ function compileSass() {
 function compileJS() {
   return src("src/js/**/*.js")
     .pipe(dest("docs/js/"))
-    .pipe(dest("dist/js/"))
     .pipe(browserSync.stream());
 }
 
