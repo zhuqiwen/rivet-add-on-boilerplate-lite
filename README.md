@@ -19,7 +19,7 @@ If you don't have both Node and NPM installed, visit the Node website for [instr
 Clone this repo to the computer on which you'll be developing your add-on:
 
 ```sh
-git clone https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite.git
+git clone https://github.com/indiana-university/rivet-add-on-boilerplate-lite.git
 ```
 
 ### 3. Start your development server
@@ -53,6 +53,6 @@ If you need help building your add-on, you can reach out on the [Rivet slack cha
 ## Rivet Community Workshop Tutorial Details
 The Spring 2019 Rivet Community Workshop will feature three add-on tutorial projects. You can find out more about them by following the links below:
 
-* [Configurable subheader](https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/subheader.md)
-* [Progress bar](https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/progress-bar.md)
-* [Textarea word counter](https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/word-counter.md)
+* [Configurable subheader](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/subheader.md)
+* [Progress bar](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/progress-bar.md)
+* [Textarea word counter](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/word-counter.md)
