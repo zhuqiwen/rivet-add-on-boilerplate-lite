@@ -1,10 +1,10 @@
 {
   "name": "rivet-add-on-boilerplate-lite",
   "version": "0.1.1",
-  "description": "Add the description of your component here",
+  "description": "A lightweight version of the Rivet Add-on Boilerplate",
   "repository": {
     "type": "git",
-    "url": "https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite"
+    "url": "https://github.com/indiana-university/rivet-add-on-boilerplate-lite.git"
   },
   "main": "dist/js/rivet-add-on-boilerplate-lite.js",
   "scripts": {
