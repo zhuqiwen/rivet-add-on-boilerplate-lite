@@ -1,4 +1,4 @@
-const { src, dest, watch } = require("gulp");
+const gulp = require("gulp");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 
@@ -10,30 +10,48 @@ function watchFiles(callback) {
     }
   });
 
-  watch("src/sass/**/*.scss", { ignoreInitial: false }, compileSass);
-  watch("src/js/**/*.js", { ignoreInitial: false }, compileJS);
-  watch("src/index.html", { ignoreInitial: false }, compileHTML);
+  gulp.watch("src/sass/**/*.scss", { ignoreInitial: false }, compileSass);
+  gulp.watch("src/js/**/*.js", { ignoreInitial: false }, compileJS);
+  gulp.watch("src/index.html", { ignoreInitial: false }, compileHTML);
   callback();
 }
 
 function compileSass() {
-  return src("src/sass/**/*.scss")
+  return gulp.src("src/sass/**/*.scss")
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-    .pipe(dest("docs/css/"))
+    .pipe(gulp.dest("docs/css/"))
     .pipe(browserSync.stream());
 }
 
 function compileJS() {
-  return src("src/js/**/*.js")
-    .pipe(dest("docs/js/"))
+  return gulp.src("src/js/**/*.js")
+    .pipe(gulp.dest("docs/js/"))
     .pipe(browserSync.stream());
 }
 
 function compileHTML() {
-  return src("src/index.html")
-    .pipe(dest("docs/"))
+  return gulp.src("src/index.html")
+    .pipe(gulp.dest("docs/"))
     .pipe(browserSync.stream());
 }
 
-// Default development task
+// Build add-on source to dist
+function build(callback) {
+  buildSass();
+  buildJs();
+  callback();
+}
+
+function buildSass() {
+  gulp.src(["src/sass/**/*.scss", "!src/sass/code-snippet-styling.scss"])
+    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
+    .pipe(gulp.dest("dist/css/"));
+}
+
+function buildJs() {
+  gulp.src("src/js/**/*.js")
+    .pipe(gulp.dest("dist/js/"));
+}
+
 exports.default = watchFiles;
+exports.build = build;
