@@ -1,0 +1,22 @@
+{
+  "name": "rivet-add-on-boilerplate-lite",
+  "version": "0.1.1",
+  "description": "Add the description of your component here",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite"
+  },
+  "main": "dist/js/rivet-add-on-boilerplate-lite.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp release"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "rivet-uits": "^1.3.0"
+  }
+}
