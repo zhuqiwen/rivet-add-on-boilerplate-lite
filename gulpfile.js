@@ -2,8 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 
-// Development server
-function watchFiles(callback) {
+function startDevServer(callback) {
   browserSync.init(["docs/css/**/*.css", "docs/js/**/*.js", "docs/**/*.html"], {
     server: {
       baseDir: "./docs"
@@ -13,6 +12,7 @@ function watchFiles(callback) {
   gulp.watch("src/sass/**/*.scss", { ignoreInitial: false }, compileSass);
   gulp.watch("src/js/**/*.js", { ignoreInitial: false }, compileJS);
   gulp.watch("src/index.html", { ignoreInitial: false }, compileHTML);
+  
   callback();
 }
 
@@ -53,5 +53,5 @@ function buildJs() {
     .pipe(gulp.dest("dist/js/"));
 }
 
-exports.default = watchFiles;
+exports.default = startDevServer;
 exports.build = build;
