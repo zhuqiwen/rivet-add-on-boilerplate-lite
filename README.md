@@ -40,14 +40,22 @@ npm install
 npm run start
 ```
 
-This will generate a `dist` folder, a `docs` folder, and open a browser at `localhost:3000` where you can preview your add-on as you develop and document it.
-
-
+This will generate a `docs` folder and open a browser at `localhost:3000` where you can preview your add-on as you develop and document it.
 
 ### 5. Build and document your add-on
 We've provided a `src/index.html` file where you can test your add-on, write documentation, and provide code examples.
 
-This `index.html` file will be built to the `docs` folder and can be published with GitHub Pages. This folder is also where `localhost:3000` points when you start your development server in step 3.
+This `index.html` file will be built to the `docs` folder and can be published with GitHub Pages. This folder is also where `localhost:3000` points when you start your development server in step 4.
+
+### 6. Distribute your add-on
+
+To generate plain CSS and JS for your add-on that can be shared with others, run the following command:
+
+```sh
+gulp build
+```
+
+This will generate a `dist` folder containing your component's compiled CSS and JS that can be included on a page in another app.
 
 ## Getting help with your add-on
 If you need help building your add-on, you can reach out on the [Rivet slack channel](https://iuwebcommunity.slack.com/messages/rivet) or [Rivet mailing list](mailto:rivet-l@list.iu.edu).
