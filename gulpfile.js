@@ -55,18 +55,34 @@ function compileHTML() {
     .pipe(browserSync.stream());
 }
 
-// Build add-on source to dist
+/**
+ * Builds the distributable add-on CSS and JavaScript to /dist. This process
+ * does not include any HTML or CSS used to render the add-on's documentation;
+ * it only builds out the source files necessary for someone to use the add-on
+ * in their own application.
+ *
+ * Running `gulp build` builds the CSS and JavaScript.
+ */
+
 function build(callback) {
   buildSass();
   buildJs();
   callback();
 }
 
+/**
+ * Builds Sass files to /dist/css for distribution.
+ */
+
 function buildSass() {
   gulp.src(["src/sass/**/*.scss", "!src/sass/code-snippet-styling.scss"])
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(gulp.dest("dist/css/"));
 }
+
+/**
+ * Builds JavaScript files to /dist/js for distribution.
+ */
 
 function buildJs() {
   gulp.src("src/js/**/*.js")
