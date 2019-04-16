@@ -22,7 +22,17 @@ Clone this repo to the computer on which you'll be developing your add-on:
 git clone https://github.com/indiana-university/rivet-add-on-boilerplate-lite.git
 ```
 
-### 3. Start your development server
+### 3. Rename the boilerplate Sass and JavaScript files
+Rename the following Sass and JavaScript files, replacing `rivet-add-on-boilerplate-lite` with the name of your add-on, such as `rivet-progress-bar`:
+
+```
+src/sass/rivet-add-on-boilerplate-lite.scss
+src/js/rivet-add-on-boilerplate-lite.js
+```
+
+You'll also need to update the paths to the CSS and JavaScript files in `src/index.html` to point to your renamed files.
+
+### 4. Start your development server
 With Node and NPM installed, use your terminal to navigate to the folder into which you cloned this repo and run the following commands:
 
 ```sh
@@ -32,15 +42,7 @@ npm run start
 
 This will generate a `dist` folder, a `docs` folder, and open a browser at `localhost:3000` where you can preview your add-on as you develop and document it.
 
-### 4. Rename the boilerplate Sass and JavaScript files
-Rename the following Sass and JavaScript files, replacing `rivet-add-on-boilerplate-lite` with the name of your add-on, such as `rivet-progress-bar`:
 
-```
-src/sass/rivet-add-on-boilerplate-lite.scss
-src/js/rivet-add-on-boilerplate-lite.js
-```
-
-You'll also need to update the paths to the CSS and JavaScript files in `src/index.html` to point to your renamed files.
 
 ### 5. Build and document your add-on
 We've provided a `src/index.html` file where you can test your add-on, write documentation, and provide code examples.
