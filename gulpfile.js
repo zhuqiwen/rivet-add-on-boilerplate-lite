@@ -2,6 +2,12 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 
+/**
+ * Starts the local development server, using /docs as the base directory.
+ *
+ * Running `npm run start` starts the local development server.
+ */
+
 function startDevServer(callback) {
   browserSync.init(["docs/css/**/*.css", "docs/js/**/*.js", "docs/**/*.html"], {
     server: {
@@ -16,6 +22,10 @@ function startDevServer(callback) {
   callback();
 }
 
+/**
+ * Compiles Sass files to /docs/css for use by the local development server.
+ */
+
 function compileSass() {
   return gulp.src("src/sass/**/*.scss")
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
@@ -23,11 +33,21 @@ function compileSass() {
     .pipe(browserSync.stream());
 }
 
+/**
+ * Compiles JavaScript files to /docs/js for use by the local 
+ * development server.
+ */
+
 function compileJS() {
   return gulp.src("src/js/**/*.js")
     .pipe(gulp.dest("docs/js/"))
     .pipe(browserSync.stream());
 }
+
+/**
+ * Compiles documentation HTML files to /docs for use by the local 
+ * development server.
+ */
 
 function compileHTML() {
   return gulp.src("src/index.html")
