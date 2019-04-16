@@ -3,10 +3,8 @@
  * It is not intended to house styling specific to the component itself.
  */
 
-@import "../../node_modules/rivet-uits/sass/core/variables";
-
 .rvt-typeset h1 {
-  font-size: $ts-xl;
+  font-size: 2.5625rem;
   line-height: 1.1;
 }
 
@@ -21,7 +19,7 @@
 .rvt-typeset h4,
 .rvt-typeset h5,
 .rvt-typeset h6 {
-  font-size: $ts-sm;
+  font-size: 1.25rem;
 }
 
 .rvt-typeset h1,
@@ -30,7 +28,7 @@
 .rvt-typeset h4,
 .rvt-typeset h5,
 .rvt-typeset h6 {
-  font-weight: $font-weight-bold;
+  font-weight: 700;
   margin-top: 2rem;
 }
 
@@ -43,37 +41,37 @@
 }
 
 .rvt-example {
-  margin-top: $md;
+  margin-top: 1.5rem;
 
   &__demo {
-    border: 1px solid $color-black--200;
-    border-top-right-radius: $xxs;
-    border-top-left-radius: $xxs;
-    padding: $sm;
+    border: 1px solid #dddddd;
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+    padding: 1.25rem;
   }
 
   &__code {
-    background-color: $color-subtle-gray;
-    border: 1px solid $color-black--200;
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
     border-top: none;
-    border-bottom-right-radius: $xxs;
-    border-bottom-left-radius: $xxs;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
     position: relative;
 
     pre {
       margin: 0;
 
       code {
-        font-size: $ts-xs;
+        font-size: .875rem;
         font-family: "Monaco", "Menolo", "Andale mono", monospace;
-        padding: $sm;
+        padding: 1.25rem;
       }
     }
   }
 
   &__code--only {
-    border: 1px solid $color-black--200;
-    border-radius: $xxs;
+    border: 1px solid #dddddd;
+    border-radius: .25rem;
     position: relative;
   }
 }
