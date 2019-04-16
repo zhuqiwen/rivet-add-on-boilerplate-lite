@@ -9,7 +9,7 @@
   "main": "dist/js/rivet-add-on-boilerplate-lite.js",
   "scripts": {
     "start": "npx gulp",
-    "build": "npx gulp release"
+    "build": "npx gulp build"
   },
   "author": "",
   "license": "BSD-3-Clause",

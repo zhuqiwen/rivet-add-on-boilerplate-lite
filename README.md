@@ -52,7 +52,7 @@ This `index.html` file will be built to the `docs` folder and can be published w
 To generate plain CSS and JS for your add-on that can be shared with others, run the following command:
 
 ```sh
-gulp build
+npm run build
 ```
 
 This will generate a `dist` folder containing your component's compiled CSS and JS that can be included on a page in another app.
