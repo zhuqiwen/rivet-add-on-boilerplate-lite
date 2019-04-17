@@ -9,7 +9,7 @@ The process step indicator add-on should do the following:
 - Allow the user to click the step indicators to jump to that part of the process
 - Provide the developer with both horizontal and vertical variants
 
-## Examples
+## Example
 - [US Patent and Trademark Office](https://uspto.github.io/designpatterns/1.x/docs/components/stepIndicators.html): The USPTO style guide features examples of both vertical and horizontal process step indicators.
 
 ## Additional resources

@@ -8,7 +8,7 @@ Create an add-on that displays horizontal sub-navigation that's separate from th
 - Highlight the currently selected navigation item
 - Be usable at full width or within a narrower [Rivet grid](https://rivet.iu.edu/components/layout/grid/) item
 
-## Examples
+## Example
 - [GitHub profile navigation](https://github.com/scottanthonymurray): GitHub profiles display a horizontal sub-navigation that allows people to jump between the different pages of a profile (Overview, Repositories, Projects, etc...).
 
 ## Things to consider

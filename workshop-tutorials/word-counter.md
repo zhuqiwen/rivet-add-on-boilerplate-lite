@@ -8,7 +8,7 @@ The word counter add-on should do the following:
 - Display the number of words typed, the number of words remaining, or both
 - Show an error message using [Rivet's form validation styles](https://rivet.iu.edu/components/forms/text-input/#inline-validation-states) if the number of words exceeds the limit
 
-## Examples
+## Example
 
 - [Basic example](https://codepen.io/geoffmuskett/pen/uldmJ)
 
