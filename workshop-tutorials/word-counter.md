@@ -9,15 +9,12 @@ The word counter add-on should do the following:
 - Show an error message using [Rivet's form validation styles](https://rivet.iu.edu/components/forms/text-input/#inline-validation-states) if the number of words exceeds the limit
 
 ## Example
-
 - [Basic example](https://codepen.io/geoffmuskett/pen/uldmJ)
 
 ## Additional resources
-
 - [Deque University](https://dequeuniversity.com/library/aria/counters/sf-characters-remaining): Deque University provides information on how to build accessible `textarea` word counters
 
 ## Challenges
-
 - Try creating a variant of this add-on that can be configured to count characters instead of words
 
 ## Things to consider

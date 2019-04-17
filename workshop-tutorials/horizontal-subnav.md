@@ -2,7 +2,6 @@
 Create an add-on that displays horizontal sub-navigation that's separate from the main page navigation.
 
 ## How it should work
-
 - Display a horizontal list of navigation links
 - Highlight a navigation item when hovered over
 - Highlight the currently selected navigation item
