@@ -13,7 +13,7 @@ The process step indicator add-on should do the following:
 - [US Patent and Trademark Office](https://uspto.github.io/designpatterns/1.x/docs/components/stepIndicators.html): The USPTO style guide features examples of both vertical and horizontal process step indicators
 
 ## Additional resources
-- [W3C documentation](https://www.w3.org/WAI/tutorials/forms/multi-page/): The W3C provides information on how to build accessible process step indicators
+- [W3C documentation](https://www.w3.org/WAI/tutorials/forms/multi-page/#using-step-by-step-indicator): The W3C provides information on how to build accessible process step indicators
 
 ## Things to consider
 Keep the following in mind when building the process step indicator add-on:
