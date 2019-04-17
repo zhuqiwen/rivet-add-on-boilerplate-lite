@@ -1,18 +1,23 @@
 # Rivet Add-on: Process Step Indicator
-This add-on is intended to allow developers to create a vertical or horizontal bar, which indicates where a user is within a specific process. 
+Create an add-on that shows a user what step of a process they're on.
 
 ## How it should work
-The process step indicator should reliably show where the user is within a given workflow, but also act as a form of navigation for users who need to move to different parts of the process.
+The process step indicator add-on should do the following:
 
-## Progress bars in the wild
-* [IU Application for Admission](https://sisjee.iu.edu/sisweb-prd/ad-rev/welcome/): This indicator takes the form of a left-side nav bar, and visually indicated what users have completed at-a-glance.
+- Display each step's order in the process (number) and title
+- Show the user where they are in the process
+- Allow the user to click the step indicators to jump to that part of the process
+- Provide the developer with both horizontal and vertical variants
 
-* [US Patent and Trademark Office](https://uspto.github.io/designpatterns/1.x/docs/components/stepIndicators.html): The USPTO Styleguide provides examples of both vertical and horizontal process step indicators.
+## Examples
+- [US Patent and Trademark Office](https://uspto.github.io/designpatterns/1.x/docs/components/stepIndicators.html): The USPTO style guide features examples of both vertical and horizontal process step indicators.
 
-* [W3C documentation](https://www.w3.org/WAI/tutorials/forms/multi-page/): The W3C provides information on how to build a process step indicator, and what it takes to make it accessible.
+## Additional resources
+- [W3C documentation](https://www.w3.org/WAI/tutorials/forms/multi-page/): The W3C provides information on how to build accessible process step indicators.
 
-## Challenges
-There are many important questions to keep in mind while building this add-on.
+## Things to consider
+Keep the following in mind when building the process step indicator add-on:
 
-* Is what you built accessible? If not, what needs to change in order to make it accessible?
-* How will your progress bar behave on mobile? How can you make it better for the mobile experience?
+- How would your add-on work for someone using assistive technology like a screen reader? How would the current step be announced?
+- What would your add-on look like on smaller screens?
+- How might a single-page application update the current step in an accessible way?
