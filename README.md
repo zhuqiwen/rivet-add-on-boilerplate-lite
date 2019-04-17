@@ -64,5 +64,5 @@ If you need help building your add-on, you can reach out on the [Rivet slack cha
 The Spring 2019 Rivet Community Workshop will feature three add-on tutorial projects. You can find out more about them by following the links below:
 
 * [Horizontal sub-navigation](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/horizontal-subnav.md)
-* [Process step indicator](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/process-step-indicator.md)
 * [Textarea word counter](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/word-counter.md)
+* [Process step indicator](https://github.com/indiana-university/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/process-step-indicator.md)
