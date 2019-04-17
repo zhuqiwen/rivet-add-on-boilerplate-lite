@@ -1,4 +1,4 @@
-# Rivet Add-on: Word Counter
+# Rivet add-on: Word counter
 Create an add-on that displays the number of words typed or remaining in a `textarea`.
 
 ## How it should work

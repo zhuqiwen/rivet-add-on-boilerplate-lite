@@ -1,4 +1,4 @@
-# Rivet Add-on: Process Step Indicator
+# Rivet add-on: Process step indicator
 Create an add-on that shows a user what step of a process they're on.
 
 ## How it should work

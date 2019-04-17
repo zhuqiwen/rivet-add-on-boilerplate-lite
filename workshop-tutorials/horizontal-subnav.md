@@ -1,4 +1,4 @@
-# Rivet Add-on: Horizontal Sub-Navigation
+# Rivet add-on: Horizontal sub-navigation
 Create an add-on that displays horizontal sub-navigation that's separate from the main page navigation.
 
 ## How it should work
