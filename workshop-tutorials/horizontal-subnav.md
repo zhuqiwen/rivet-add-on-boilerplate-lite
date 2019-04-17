@@ -14,5 +14,5 @@ Create an add-on that displays horizontal sub-navigation that's separate from th
 Keep the following in mind when building the horizontal sub-navigation add-on:
 
 - How would your add-on work for someone using assistive technology like a screen reader? How would the currently-selected navigation item be announced?
-- What would your add-on look like on smaller screens?
+- How would your add-on display on smaller screens?
 - How might a single-page application update the current navigation item in an accessible way?

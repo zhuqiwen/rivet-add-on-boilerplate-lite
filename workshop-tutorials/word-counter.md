@@ -21,5 +21,5 @@ The word counter add-on should do the following:
 Keep the following in mind when building the word counter add-on:
 
 - How would your add-on work for someone using assistive technology like a screen reader? How would the word limit and validation errors be announced?
-- What would your add-on look like on smaller screens?
+- How would your add-on display on smaller screens?
 - How might a developer's validation script detect if there's too many words in the `textarea`?

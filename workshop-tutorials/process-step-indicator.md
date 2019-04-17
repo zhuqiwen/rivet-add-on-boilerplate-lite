@@ -19,5 +19,5 @@ The process step indicator add-on should do the following:
 Keep the following in mind when building the process step indicator add-on:
 
 - How would your add-on work for someone using assistive technology like a screen reader? How would the current step be announced?
-- What would your add-on look like on smaller screens?
+- How would your add-on display on smaller screens?
 - How might a single-page application update the current step in an accessible way?
