@@ -8,8 +8,8 @@
   },
   "main": "dist/js/rivet-add-on-boilerplate-lite.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp release"
+    "start": "npx gulp",
+    "build": "npx gulp build"
   },
   "author": "",
   "license": "BSD-3-Clause",

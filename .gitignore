@@ -5,6 +5,7 @@
 
 # Compiled files
 dist
+docs
 
 # misc
 .DS_Store
