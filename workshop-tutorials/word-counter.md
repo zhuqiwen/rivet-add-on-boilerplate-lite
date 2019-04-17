@@ -12,6 +12,10 @@ The word counter add-on should do the following:
 
 - [Basic example](https://codepen.io/geoffmuskett/pen/uldmJ)
 
+## Additional resources
+
+- [Deque University](https://dequeuniversity.com/library/aria/counters/sf-characters-remaining): Deque University provides information on how to build accessible `textarea` word counters
+
 ## Challenges
 
 - Try creating a variant of this add-on that can be configured to count characters instead of words
