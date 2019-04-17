@@ -1,11 +1,24 @@
 # Rivet Add-on: Word Counter
-This add-on is intended to allow users to see the number of words used or remaining in a given textarea.
+Create an add-on that displays the number of words typed or remaining in a `textarea`.
 
 ## How it should work
-There are things about the word counter that you will need to decide for yourself. Will your counter show the number of words written, the number of words left toward a word count maximum, or will developers be able to use it either way?
+The word counter add-on should do the following:
+
+- Allow a developer to specify the word limit
+- Display the number of words typed, the number of words remaining, or both
+- Show an error message using [Rivet's form validation styles](https://rivet.iu.edu/components/forms/text-input/#inline-validation-states) if the number of words exceeds the limit
+
+## Examples
+
+- [Basic example](https://codepen.io/geoffmuskett/pen/uldmJ)
 
 ## Challenges
-There are many important questions to keep in mind while building this add-on.
 
-* Is what you built accessible? If not, what needs to change in order to make it accessible?
-* What kinds of bugs might come up?
+- Try creating a variant of this add-on that can be configured to count characters instead of words
+
+## Things to consider
+Keep the following in mind when building the word counter add-on:
+
+- How would your add-on work for someone using assistive technology like a screen reader? How would the word limit and validation errors be announced?
+- What would your add-on look like on smaller screens?
+- How might a developer's validation script detect if there's too many words in the `textarea`?
