@@ -24,7 +24,7 @@
       ./css/rivet-add-on-name.css
     -->
 
-    <link rel="stylesheet" href="./css/rivet-add-on-boilerplate-lite.css" />
+    <link rel="stylesheet" href="./css/qiwen-add-on.css" />
   </head>
   <body>
     <div
@@ -49,6 +49,20 @@
       <p class="rvt-m-top-xxs rvt-m-bottom-xxl rvt-ts-20">
         A brief description of your component
       </p>
+
+      <form>
+  
+        <!-- remember to markup your forms properly using labels! -->
+        <label for="textareaChars1">No more than <span></span> characters</label>
+        <textarea id="textareaChars1" maxlength="50"></textarea>
+        <span id="chars1"></span> characters remaining
+        <br />
+
+        <label for="textareaChars2">No more than <span></span> characters</label>
+        <textarea id="textareaChars2" maxlength="50"></textarea>
+        <span id="chars2"></span> characters remaining
+        
+      </form>
 
       <!--
         Your add-on documentation should include code samples that show how a
@@ -210,14 +224,14 @@ component.init();</code></pre>
       ./js/rivet-add-on-name.js
     -->
 
-    <script src="./js/rivet-add-on-boilerplate-lite.js"></script>
+    <script src="./js/qiwen-add-on.js"></script>
     <script>
 
       // Initializes syntax highlighting for your code examples.
       hljs.initHighlightingOnLoad();
 
       // If your add-on requires JavaScript, do any initialization here.
-      const component = new MyComponent('.rvt-button--fancy');
+      const component = new MyComponent('textarea', 88);
       component.init();
 
     </script>

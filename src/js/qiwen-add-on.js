@@ -26,8 +26,24 @@ const MyComponent = (function() {
    * const component = new MyComponent('button.rvt-fancy-button');
    */
   
-  const Constructor = function(selector) {
+  const Constructor = function(selector, maxLengthInit) {
     this.nodes = document.querySelectorAll(selector);
+    var maxLabels = document.querySelectorAll('label span');
+    var maxRemains = document.querySelectorAll('textarea+span');
+
+    maxLabels.forEach((element, index) => {
+      element.textContent = maxLengthInit;
+    });
+
+    maxRemains.forEach((element, index) => {
+      element.textContent = maxLengthInit;
+    });
+
+    this.nodes.forEach((element, index) => {
+      element.maxLength = maxLengthInit;
+    });
+
+
 
     // Any other code you need to initialize your component goes here.
   };
@@ -42,8 +58,13 @@ const MyComponent = (function() {
    * in the constructor method above are clicked.
    */
 
-  const handleClick = function() {
-    alert('Button clicked!');
+  const handleKeyup = function(index) {
+    var length = this.nodes[index].value.length;
+    length = this.nodes[index].maxLength - length;
+    // document.querySelector('#chars').textContent = length;
+    // console.log(this.nodes[0].nextSibling.nextSibling);
+    // console.log(this.nodes[index]);
+    this.nodes[index].nextSibling.nextSibling.textContent = length;
   }
 
   const somePrivateMethod = function() {
@@ -57,13 +78,16 @@ const MyComponent = (function() {
    * 
    * The example public method when called adds an event listener to the button
    * elements specified in the component's constructor method. This event
-   * listener calls the handleClick private method defined above.
+   * listener calls the handleKeyup private method defined above.
    */
 
   Constructor.prototype.init = function() {
-    this.nodes.forEach((button) => {
-      button.addEventListener('click', handleClick);
+  
+
+    this.nodes.forEach((textarea, index) => {
+      textarea.addEventListener('keyup', handleKeyup.bind(this, index));
     });
+    
   };
 
   Constructor.prototype.somePublicMethod = function(arg1, arg2, etc) {
